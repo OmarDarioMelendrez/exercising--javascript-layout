@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos con javascript</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <div class="header">
+        <a href="#default" class="logo">
+            <span class="logo">Daro🐱‍👤</span>
+        </a>
+        <div class="header-right">
+          <!-- <a class="active" href="#reto1">reto1</a>
+          <a href="#reto2">reto 2</a>
+          <a href="#reto3">reto 3</a> -->
+        </div>
+      </div>
+    <!-- END HEADER -->
+    
+    <div class="container">
+    
+<!-- RETO NUMERO 1 -->
+    <section class="reto-1" id="reto1">
+        <div class="row">
+            <h2>RETO 1</h2>
+            <p>El reto es saludar al nombre que se ingrese en el input</p>
+            <div class="input">
+                <input id="reto-1-input" type="text" placeholder="Indica tu nombre">
+                <button class="big-button" id="reto-1-btn" onclick="retoUnoSaludar()" type=" class="big-button"">Enviar nombre</button>
+            </div>
+            <p id="reto-1-saludo"></p>    
+        </div>
+    </section>
+
+<!-- RETO NUMERO 2 -->
+    <section class="reto-1" id="reto2">
+        <div class="row">
+            <h2>RETO 2</h2>
+            <p>El reto es saludar a la persona que ingrese su nombre y apellido</p>
+            <div class="input">
+                <input id="reto-2-input-nombre" type="text" placeholder="Indica tu nombre">
+                <input id="reto-2-input-apellido" type="text" placeholder="Indica tu apellido">
+                <button class="big-button" id="reto-2-btn" onclick="retoDosSaludar()" type="button" >Enviar nombre</button>
+            </div>
+            <p id="reto-2-saludo"></p>    
+        </div>
+    </section>
+    
+<!-- RETO NUMERO 3 -->
+    <section class="reto-1" id="reto3">
+        <div class="row">
+            <h2>RETO 3</h2>
+            <p>Imprimir en pantalla en multiples lineas información de un array</p>
+            <div class="input">
+                <button class="big-button" id="reto-3-btn" onclick="retoTresMostrarCategorias()" type="button" >Mostrar categorias</button>
+            </div>
+            <div id="reto-3"></div>    
+        </div>
+    </section>
+    
+<!-- RETO NUMERO 4 -->
+    <section class="reto-1">
+        <div class="row">
+            <h2>RETO 4</h2>
+            <p>Realizar la suma de dos números</p>
+            <div class="input">
+                <input id="reto-4-input-a" type="text" placeholder="Indica primer número">
+                <input id="reto-4-input-b" type="text" placeholder="Indica segundo número">
+                <button class="big-button" id="reto-4-btn" onclick="retoCuatroSuma()" type="button" >Realizar suma</button>
+            </div>
+            <div id="reto-4-resultado"></div>    
+        </div>
+    </section>
+    
+<!-- RETO NUMERO 5 -->
+    <section class="reto-1">
+        <div class="row">
+            <h2>RETO 5</h2>
+            <p>Sumar los primeros dos datos y multiplicar por el tercero.</p>
+            <div class="input-6">
+                <input id="reto-5-input-a" type="text" placeholder="Indica primer número">
+                <input id="reto-5-input-b" type="text" placeholder="Indica segundo número">
+                <input id="reto-5-input-c" type="text" placeholder="Indica número multiplicador">
+                <button class="big-button" id="reto-5-btn" onclick="retoCincoOperacion()" type="button" >Realizar operación</button>
+            </div>
+            <div id="reto-5-resultado"></div>    
+        </div>
+    </section>
+    
+    <!-- RETO NUMERO 6 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 6</h2>
+                <p>Calcular cuantas pizzas quedan</p>
+                <div class="input-6">
+                    <label for="reto-6-input-a">Cuantas porciones de pizza trajieron?🤔</label>
+                    <input id="reto-6-input-a" type="text" placeholder="cuantas porciones?">
+                    <label for="reto-6-input-b" >Cuantas porciones comieron?🍕</label >
+                    <input id="reto-6-input-b" type="text" placeholder="cuantas porciones?">
+                    <button class="big-button" id="reto-6-btn" onclick="retoSeis()" type="button" >Cuantas pizzas quedaron?</button>
+                </div>
+                <div id="reto-6-resultado">
+                    <span>Cuantas 🍕 quedaran?</span>
+                </div>    
+            </div>
+        </section>
+    
+    <!-- RETO NUMERO 7 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 7</h2>
+                <p>Calcular cuantos años tenía el año pasado y cuantos va a tener el año próximo.</p>
+                <div class="input-6">
+                    <label for="reto-7-input">Cuatos años tenés?</label>
+                    <input id="reto-7-input" type="text" placeholder="Ingrese su edad">
+                    <button class="big-button" id="reto-7-btn" onclick="retoSiete()" type="button" >Presioname!</button>
+                </div>
+                <div id="reto-7-resultado"></div>    
+            </div>
+        </section>
+    
+    <!-- RETO NUMERO 8 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 8</h2>
+                <p>Calcular total a pagar con impuestos y propina y devolver el precio a pagar por cada uno de los integrantes</p>
+                <div class="input-6">
+                    <label for="reto-8-input-a">Total a pagar</label>
+                    <input id="reto-8-input-a" type="text" placeholder="$">
+                    <label for="reto-8-input-b">Entre cuantas personas van a pagar la cuenta.</label>
+                    <input id="reto-8-input-b" type="text" placeholder="personas:">
+                    <label for="reto-8-input-c">cual es el % de propina</label>
+                    <input id="reto-8-input-c" type="text" placeholder="%">
+                    <label for="reto-8-input-d">cual es el % de impuestos</label>
+                    <input id="reto-8-input-d" type="text" placeholder="%">
+                    <button class="big-button" id="reto-8-btn" onclick="retoOcho()" type="button" >Presioname!</button>
+                </div>
+                <div id="reto-8-resultado"></div>    
+            </div>
+        </section>
+    
+    <!-- RETO NUMERO 9 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 9</h2>
+                <p>Calcular cuantas horas, minutos y segundos hay en la cantidad de días indicados.</p>
+                <div class="input-6">
+                    <label for="reto-9-input-a">Ingrese la cantidad de días.</label>
+                    <input id="reto-9-input-a" type="text" placeholder="$">
+                    <button class="big-button" id="reto-9-btn" onclick="retoNueve()" type="button" >Presioname!</button>
+                </div>
+                <div id="reto-9-resultado"></div>    
+            </div>
+        </section>
+    
+    <!-- RETO NUMERO 10 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 10</h2>
+                <p>Realizar el pasaje de Millas a Kilómetros.</p>
+                <div class="input-6">
+                    <label for="reto-10-input-a">Indique qué cantidad de millas.</label>
+                    <input id="reto-10-input-a" type="text" placeholder="Millas">
+                    <button class="big-button" id="reto-10-btn" onclick="retoDiez()" type="button" >CONVERTIR!</button>
+                </div>
+                <div id="reto-10-resultado"></div>    
+            </div>
+        </section>
+    
+    <!-- RETO NUMERO 11 -->
+        <section class="reto-1">
+            <div class="row">
+                <h2>RETO 11</h2>
+                <p>El usuario debe ingresar un número mayor a 1000 y otro menor a 100 y se le debe indicar cuantas veces entra el número menor dentro del mayor.</p>
+                <div class="input-6">
+                    <label for="reto-11-input-a">Igrese un número mayor que 1000</label>
+                    <input id="reto-11-input-a" type="text" placeholder="Mayor que 1000">
+                    <label for="reto-11-input-b">Ingrese un número menor que 100</label>
+                    <input id="reto-11-input-b" type="text" placeholder="Menor que 100">
+                    <button class="big-button" id="reto-11-btn" onclick="retoOnce()" type="button" >Calcular!</button>
+                </div>
+                <div id="reto-11-resultado"></div>    
+            </div>
+        </section>
+
+    </div>
+    <script src="./js/retos.js"></script>
+</body>
+</html>
